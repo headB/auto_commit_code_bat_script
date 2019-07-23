@@ -13,18 +13,19 @@ echo git push -u origin master >> timer_task.bat
 xcopy timer_task.bat %homedrive%%homepath%\.ssh /Y
 xcopy known_hosts %homedrive%%homepath%\.ssh /Y
 
-echo "¸´ÖÆÍê³É,¸ĞĞ»ÄãµÄÅäºÏ"
+echo "å¤åˆ¶å®Œæˆ,æ„Ÿè°¢ä½ çš„é…åˆ"
 
-echo "¶¨ÒåÌá½»×÷Òµ´úÂëÍê³É,¸ĞĞ»ÄãµÄÅäºÏ,×÷Òµ»á°´Ò»¶¨µÄÆµÂÊÌá½»µ½·şÎñÆ÷"
+echo "å®šä¹‰æäº¤ä½œä¸šä»£ç å®Œæˆ,æ„Ÿè°¢ä½ çš„é…åˆ,ä½œä¸šä¼šæŒ‰ä¸€å®šçš„é¢‘ç‡æäº¤åˆ°æœåŠ¡å™¨"
 
 
-echo "ÏÖÔÚ³õÊ¼»¯git¹¤¾ß"
+echo "ç°åœ¨åˆå§‹åŒ–gitå·¥å…·"
 
 git config --global user.email "%s@qq.com"
 git config --global user.name "%s"
 echo "first time to commit homework" > README.md
 git init 
 git remote add origin git@192.168.113.107:root/java_homework.git
+git pull
 git add -A
 git add .
 
@@ -33,15 +34,15 @@ git commit -m "first time to commit homework"
 git push -u origin master
 
 
-echo "git³õÊ¼»¯Íê³É!¹§Ï²,ÏÂÒ»²½ÊÇµã»÷µÚ4²½,´´½¨¶¨Ê±ÈÎÎñ!"
+echo "gitåˆå§‹åŒ–å®Œæˆ!æ­å–œ,ä¸‹ä¸€æ­¥æ˜¯ç‚¹å‡»ç¬¬4æ­¥,åˆ›å»ºå®šæ—¶ä»»åŠ¡!"
 
-%1 mshta vbscript:CreateObject("Shell.Application").ShellExecute("µÚ4²½,´´½¨¶¨ÒåÈÎÎñ - .bat","","","runas",1)(window.close)
+%1 mshta vbscript:CreateObject("Shell.Application").ShellExecute("ç¬¬4æ­¥,åˆ›å»ºå®šä¹‰ä»»åŠ¡ - .bat","","","runas",1)(window.close)
 
-echo "Èç¹û¶¼È·¶¨´´½¨³É¹¦µÄ»°,¾Í¿ÉÒÔ°´Enter¼ü,Ö®ºó¾Í»á×Ô¶¯É¾³ı¶àÓàµÄÎÄ¼ş."
+echo "å¦‚æœéƒ½ç¡®å®šåˆ›å»ºæˆåŠŸçš„è¯,å°±å¯ä»¥æŒ‰Enteré”®,ä¹‹åå°±ä¼šè‡ªåŠ¨åˆ é™¤å¤šä½™çš„æ–‡ä»¶."
 @pause
 del   id_rsa
 del   id_rsa.pub
 del   timer_task.bat
 del   known_hosts
-del   µÚ1²½,ÏÈ¿´ÎÒ,Çëµã»÷ÎÒ,±ŞÌ¢ÎÒ.txt
-del   µÚ3²½,¿´ÍêËµÃ÷ÊéÖ®ºóµã»÷ÎÒ.bat
+del   ç¬¬1æ­¥,å…ˆçœ‹æˆ‘,è¯·ç‚¹å‡»æˆ‘,é­æŒæˆ‘.txt
+del   ç¬¬3æ­¥,çœ‹å®Œè¯´æ˜ä¹¦ä¹‹åç‚¹å‡»æˆ‘.bat
